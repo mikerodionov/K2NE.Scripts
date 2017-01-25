@@ -2,6 +2,10 @@
 # Parameters set to work on Denallix VMs, and 'BulkUsers' OU will be created automatically. 
 # For other environments adjust cmdlets parameters appropriately.
 
+# Specify number of users and OUs to be created below
+$Num_of_Users= 250
+$Num_of_OU= 250
+
 import-module ActiveDirectory
 # Create target OU:
 NEW-ADOrganizationalUnit “BulkUsers” –path “DC=DENALLIX,DC=COM”
